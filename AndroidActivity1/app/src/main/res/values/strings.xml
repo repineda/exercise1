@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AndroidActivity1</string>
+    <string name="green_flag_customers_can_create_an_account_to_access">Green Flag Customers can create an account to access</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="car_health_updates">Car health updates</string>
+    <string name="request_a_rescue_online">Request a rescue online</string>
+    <string name="policy_information">Policy information</string>
+    <string name="your_password">Your password should have a minimum of 8 characters and contain at least one number, one uppercase, and one lower case letter. You can use special characters.</string>
+    <string name="choose_birth_date">CHOOSE BIRTH DATE</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="postal_code_opt">Postal code (opt)</string>
+    <string name="not_specified">Not specified</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="change_photo">Change Photo</string>
+</resources>

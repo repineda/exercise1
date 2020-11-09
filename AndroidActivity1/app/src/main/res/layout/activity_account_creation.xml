@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_account_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="0dp"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".AccountCreationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:onClick="backButton"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+
+        <TextView
+            android:id="@+id/txt_create_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/museosans_500"
+            android:layout_marginTop="14dp"
+            android:text="Create an Account"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/emailAddressPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0"
+        android:text="Email Address"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emailAddressInput"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:foregroundGravity="top"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/emailAddressImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/emailAddressInput"
+            app:layout_constraintEnd_toEndOf="@+id/emailAddressInput"
+            app:layout_constraintHorizontal_bias="0.967"
+            app:layout_constraintStart_toStartOf="@+id/emailAddressInput"
+            app:layout_constraintTop_toTopOf="@+id/emailAddressInput"
+            app:layout_constraintVertical_bias="0.48" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:id="@+id/passwordPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="Create Password"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/createPasswordImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/passwordInput"
+            app:layout_constraintHorizontal_bias="0.959"
+            app:layout_constraintStart_toStartOf="@+id/passwordInput"
+            app:layout_constraintTop_toTopOf="@+id/passwordInput"
+            app:layout_constraintVertical_bias="0.478" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/checkPasswordPrompt"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="14dp"
+        android:text="Repeat Password"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/checkPasswordInput"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/repeatPasswordImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/checkPasswordInput"
+            app:layout_constraintEnd_toEndOf="@+id/checkPasswordInput"
+            app:layout_constraintHorizontal_bias="0.967"
+            app:layout_constraintStart_toStartOf="@+id/checkPasswordInput"
+            app:layout_constraintTop_toTopOf="@+id/checkPasswordInput"
+            app:layout_constraintVertical_bias="0.478" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/txt_password_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="@string/your_password"
+        android:textSize="20dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <ImageButton
+            android:id="@+id/btn_img_create_account"
+            android:layout_width="326dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient_button_background2x"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/text_btn_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Next"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_img_create_account"
+            app:layout_constraintEnd_toEndOf="@+id/btn_img_create_account"
+            app:layout_constraintStart_toStartOf="@+id/btn_img_create_account"
+            app:layout_constraintTop_toTopOf="@+id/btn_img_create_account" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
